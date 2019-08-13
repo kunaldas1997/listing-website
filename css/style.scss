@@ -1,0 +1,217 @@
+/*****  Some default variables ****/
+
+
+$def-col: #fff;
+$def-col1: #510a32;
+$def-col2: #c72c41;
+$outline: none;
+
+@font-face {
+    font-family: 'glacial_indifferenceregular';
+    src: url('../assets/fonts/regular-.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: 1px;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-scrollbar {
+    display: none;
+}
+
+::-ms-scrollbat {
+    display: none;
+}
+
+body {
+
+    font-family: 'glacial_indifferenceregular', sans-serif;
+    align-content: flex-start;
+}
+
+a {
+    color: $def-col;
+    text-decoration: $outline;
+
+    &:link {
+        color: $def-col;
+        text-decoration: $outline;
+    }
+
+    &:hover {
+        color: $def-col;
+        text-decoration: $outline;
+    }
+
+    &:focus {
+        color: $def-col;
+        text-decoration: $outline;
+    }
+
+}
+
+button {
+    &:hover {
+        outline: $outline;
+    }
+
+    &:active {
+        outline: $outline;
+    }
+
+    &:focus {
+        outline: $outline;
+    }
+}
+
+/*** Navigation ***/
+.navbar {
+    background: $def-col1;
+    color: $def-col;
+    width: 100%;
+    padding: 20px;
+}
+
+/** Jumbo **/
+.jumbotron,
+.jumbotron-fluid {
+    background: url('../assets/back.jpg') no-repeat center fixed;
+    height: 600px;
+
+    h5 {
+        font-size: 16px;
+        font-weight: 200;
+    }
+
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    background: rgba(#000, 0.5);
+    z-index: 1;
+
+    .page-head {
+        margin-top: 155px;
+    }
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 20px;
+
+    &:focus {
+        box-shadow: $outline;
+        border: $outline;
+    }
+}
+
+.btn-primary {
+    background: $def-col1;
+    color: $def-col;
+    border: $outline;
+    font-size: 14px;
+    height: 43px;
+    width: 103px;
+    padding: 10px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+
+    &:focus {
+        box-shadow: $outline;
+    }
+
+    &:hover {
+        background: $def-col1;
+        color: $def-col;
+        border: $outline;
+    }
+
+    &:active {
+        background: $def-col1;
+        color: $def-col;
+        border: $outline;
+    }
+
+    &:not(:disabled):not(.disabled):active {
+        background: $def-col1;
+        color: $def-col;
+        border: $outline;
+        box-shadow: $outline;
+    }
+}
+
+.btn {
+    &:focus {
+        outline: $outline;
+    }
+}
+
+/***  Popular ***/
+.popular-here {
+    h4 {
+        font-size: 30px;
+    }
+}
+
+.fa-star,
+.fa-star-half,
+.fa-dollar-sign {
+    color: $def-col2;
+}
+
+.mdc-card:hover {
+    z-index: 555555555;
+    box-shadow: 0px 0px 6px rgba(109, 109, 109, 0.7);
+    cursor: pointer;
+}
+
+.team {
+    height: auto;
+    width: 100%;
+    background: url('../assets/office-lighting-166.jpg') center no-repeat fixed;
+
+}
+
+.circle {
+    color: $def-col;
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center;
+    background: #ccc;
+    line-height: 2.5;
+}
+
+.btn-default {
+    background: $def-col1;
+    color: $def-col;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+
+    &:hover {
+        color: $def-col;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.footer {
+    background: $def-col1;
+    color: $def-col;
+}

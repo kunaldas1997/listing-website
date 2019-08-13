@@ -1,0 +1,292 @@
+@import "style.scss";
+
+
+._contact_number {
+    color: $def-col;
+}
+
+.unstyled {
+    list-style: none;
+}
+
+._cont_btn {
+    width: auto;
+}
+
+.btn-secondary {
+    border-radius: 5px;
+    width: 25%;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &:hover {
+        border-color: none;
+    }
+}
+
+.btn {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.modal-header {
+    background: $def-col1;
+}
+
+.modal-title {
+    color: $def-col;
+}
+
+.close_btn {
+    color: $def-col;
+}
+
+/**  Profile **/
+
+.image-section {
+    background: #e0e0e0;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.text-vio {
+    color: $def-col1;
+    font-size: 30px;
+}
+
+.profile-details {
+    .font-size {
+        font-size: 14px;
+    }
+
+    .btn-link {
+        color: $def-col1;
+        text-decoration: none;
+
+        a {
+            color: $def-col1;
+        }
+    }
+}
+
+.list-group {
+    .active {
+        color: $def-col;
+        background: $def-col1;
+        border: none;
+        border-color: none;
+    }
+
+    border: none;
+
+}
+
+#list-tab {
+    a {
+        color: $def-col1;
+
+        &:hover {
+            background: $def-col1;
+            color: $def-col;
+        }
+    }
+
+    .active {
+        color: $def-col;
+    }
+
+}
+
+.newJumb {
+    height: 500px;
+
+    .overlay {
+        background: rgba(#000, 0.7)
+    }
+}
+
+.product-name {
+    text-align: center;
+
+    .media {
+        img {
+            border-radius: 50px;
+        }
+
+    }
+
+    .display-5 {
+        font-size: 30px;
+    }
+}
+
+.actions {
+    .call {
+        background: $def-col;
+        color: $def-col1;
+        font-size: 20px;
+    }
+
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+    font-weight: 500;
+    font-size: 20px;
+    color: #ccc;
+
+    &:hover {
+        border-color: $def-col $def-col $def-col1 $def-col;
+        transition: ease-in-out .3s;
+        color: $def-col1;
+
+    }
+
+
+    &.active {
+        color: $def-col1;
+        background-color: $def-col;
+        border-color: $def-col $def-col $def-col1;
+    }
+
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.horizontal {
+    @extend %horizontal-scroll;
+
+    .actions {
+        @extend %horizontal-scroll;
+    }
+
+    .scroll {
+        @extend %horizontal-scroll;
+    }
+}
+
+.call-new {
+    font-size: 20px;
+    color: #000;
+}
+
+.text-bold {
+    font-style: bold;
+    font-weight: 700
+}
+
+
+
+/** Media Queries **/
+// @media (max-width: 743px) {
+//     .grid-1 {
+//         margin-top: 15px;
+//         margin-bottom: 15px;
+//     }
+// }
+
+@media (max-width: 743px) {
+    .image-section {
+        align-content: center;
+    }
+
+    .profile-details {
+        text-align: center;
+        align-content: center;
+
+    }
+
+    .product-name-details {
+        text-align: center;
+        align-content: center;
+    }
+
+    .ondesk {
+        display: none;
+    }
+
+    .ripple_anim {
+        float: right
+    }
+
+    form {
+        label {
+            p {
+                display: none;
+            }
+        }
+    }
+
+    .grid-layout {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        // display: grid;
+        max-width: 100%;
+
+    }
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+}
+
+
+@media (min-width: 767px) {
+    .onmob {
+        display: none;
+    }
+
+    .profile-details {
+        padding-left: 3rem
+    }
+
+    .grid-layout {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        grid-gap: 20px;
+        display: grid;
+        max-width: 100%;
+        margin: auto;
+    }
+
+
+    .grid-1 {
+        grid-column: 1/1;
+        grid-row: 1/3;
+    }
+
+    .grid-2 {
+        grid-column: 2/2;
+        grid-row: 1/-1;
+    }
+
+    .grid-3 {
+        grid-column: 2/2;
+        grid-row: 2;
+    }
+
+    .grid-4 {
+        grid-column: 1/3;
+        grid-row: 3/7;
+    }
+}
+
+/** Extended Properties**/
+
+%horizontal-scroll {
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: -webkit-inline-box;
+}

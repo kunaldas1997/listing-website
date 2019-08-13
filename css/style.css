@@ -1,0 +1,201 @@
+/*****  Some default variables ****/
+@font-face {
+  font-family: "glacial_indifferenceregular";
+  src: url("../assets/fonts/regular-.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-moz-scrollbar {
+  display: none;
+}
+
+::-ms-scrollbat {
+  display: none;
+}
+
+body {
+  font-family: "glacial_indifferenceregular", sans-serif;
+  align-content: flex-start;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+button:hover {
+  outline: none;
+}
+
+button:active {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+/*** Navigation ***/
+.navbar {
+  background: #510a32;
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+
+/** Jumbo **/
+.jumbotron,
+.jumbotron-fluid {
+  background: url("../assets/back.jpg") no-repeat center fixed;
+  height: 600px;
+}
+
+.jumbotron h5,
+.jumbotron-fluid h5 {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overlay .page-head {
+  margin-top: 155px;
+}
+
+.form-control {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.btn-primary {
+  background: #510a32;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  height: 43px;
+  width: 103px;
+  padding: 10px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+.btn-primary:hover {
+  background: #510a32;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:active {
+  background: #510a32;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background: #510a32;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/***  Popular ***/
+.popular-here h4 {
+  font-size: 30px;
+}
+
+.fa-star,
+.fa-star-half,
+.fa-dollar-sign {
+  color: #c72c41;
+}
+
+.mdc-card:hover {
+  z-index: 555555555;
+  /* box-shadow: 0px 0px 6px rgba(109, 109, 109, 0.7); */
+  cursor: pointer;
+}
+
+.team {
+  height: auto;
+  width: 100%;
+  background: url("../assets/office-lighting-166.jpg") center no-repeat fixed;
+}
+
+.circle {
+  color: #fff;
+  height: 80px;
+  width: 80px;
+  font-size: 30px;
+  border-radius: 50%;
+  text-align: center;
+  background: #ccc;
+  line-height: 2.5;
+}
+
+.btn-default {
+  background: #510a32;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.btn-default:hover {
+  color: #fff;
+}
+
+.btn-default:focus {
+  box-shadow: none;
+}
+
+.footer {
+  background: #510a32;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

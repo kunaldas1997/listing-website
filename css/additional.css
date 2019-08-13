@@ -1,0 +1,444 @@
+/*****  Some default variables ****/
+@font-face {
+  font-family: "glacial_indifferenceregular";
+  src: url("../assets/fonts/regular-.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-moz-scrollbar {
+  display: none;
+}
+
+::-ms-scrollbat {
+  display: none;
+}
+
+body {
+  font-family: "glacial_indifferenceregular", sans-serif;
+  align-content: flex-start;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+button:hover {
+  outline: none;
+}
+
+button:active {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+/*** Navigation ***/
+.navbar {
+  background: #510a32;
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+
+/** Jumbo **/
+.jumbotron,
+.jumbotron-fluid {
+  background: url("../assets/back.jpg") no-repeat center fixed;
+  height: 600px;
+}
+
+.jumbotron h5,
+.jumbotron-fluid h5 {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overlay .page-head {
+  margin-top: 155px;
+}
+
+.form-control {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.btn-primary {
+  background: #510a32;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  height: 43px;
+  width: 103px;
+  padding: 10px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+.btn-primary:hover {
+  background: #510a32;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:active {
+  background: #510a32;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background: #510a32;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/***  Popular ***/
+.popular-here h4 {
+  font-size: 30px;
+}
+
+.fa-star,
+.fa-star-half,
+.fa-dollar-sign {
+  color: #c72c41;
+}
+
+.mdc-card:hover {
+  z-index: 555555555;
+  /* box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7); */
+  cursor: pointer;
+}
+
+.team {
+  height: auto;
+  width: 100%;
+  background: url("../assets/office-lighting-166.jpg") center no-repeat fixed;
+}
+
+.circle {
+  color: #fff;
+  height: 80px;
+  width: 80px;
+  font-size: 30px;
+  border-radius: 50%;
+  text-align: center;
+  background: #ccc;
+  line-height: 2.5;
+}
+
+.btn-default {
+  background: #510a32;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.btn-default:hover {
+  color: #fff;
+}
+
+.btn-default:focus {
+  box-shadow: none;
+}
+
+.footer {
+  background: #510a32;
+  color: #fff;
+}
+
+._contact_number {
+  color: #fff;
+}
+
+.unstyled {
+  list-style: none;
+}
+
+._cont_btn {
+  width: auto;
+}
+
+.btn-secondary {
+  border-radius: 5px;
+  width: 25%;
+}
+
+.btn-secondary:focus {
+  box-shadow: none;
+}
+
+.btn-secondary:hover {
+  border-color: none;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.modal-header {
+  background: #510a32;
+}
+
+.modal-title {
+  color: #fff;
+}
+
+.close_btn {
+  color: #fff;
+}
+
+/**  Profile **/
+.image-section {
+  background: #e0e0e0;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.text-vio {
+  color: #510a32;
+  font-size: 30px;
+}
+
+.profile-details .font-size {
+  font-size: 14px;
+}
+
+.profile-details .btn-link {
+  color: #510a32;
+  text-decoration: none;
+}
+
+.profile-details .btn-link a {
+  color: #510a32;
+}
+
+.list-group {
+  border: none;
+}
+
+.list-group .active {
+  color: #fff;
+  background: #510a32;
+  border: none;
+  border-color: none;
+}
+
+#list-tab a {
+  color: #510a32;
+}
+
+#list-tab a:hover {
+  background: #510a32;
+  color: #fff;
+}
+
+#list-tab .active {
+  color: #fff;
+}
+
+.newJumb {
+  height: 500px;
+}
+
+.newJumb .overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.product-name {
+  text-align: center;
+}
+
+.product-name .media img {
+  border-radius: 50px;
+}
+
+.product-name .display-5 {
+  font-size: 30px;
+}
+
+.actions .call {
+  background: #fff;
+  color: #510a32;
+  font-size: 20px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+  font-weight: 500;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.nav-tabs .nav-item.show .nav-link:hover,
+.nav-tabs .nav-link:hover {
+  border-color: #fff #fff #510a32 #fff;
+  transition: ease-in-out 0.3s;
+  color: #510a32;
+}
+
+.nav-tabs .nav-item.show .nav-link.active,
+.nav-tabs .nav-link.active {
+  color: #510a32;
+  background-color: #fff;
+  border-color: #fff #fff #510a32;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.call-new {
+  font-size: 20px;
+  color: #000;
+}
+
+.text-bold {
+  font-style: bold;
+  font-weight: 700;
+}
+
+/** Media Queries **/
+@media (max-width: 743px) {
+  .image-section {
+    align-content: center;
+  }
+
+  .profile-details {
+    text-align: center;
+    align-content: center;
+  }
+
+  .product-name-details {
+    text-align: center;
+    align-content: center;
+  }
+
+  .ondesk {
+    display: none;
+  }
+
+  .ripple_anim {
+    float: right;
+  }
+
+  form label p {
+    display: none;
+  }
+
+  .grid-layout {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    max-width: 100%;
+  }
+
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 767px) {
+  .onmob {
+    display: none;
+  }
+
+  .profile-details {
+    padding-left: 3rem;
+  }
+
+  .grid-layout {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 20px;
+    display: grid;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .grid-1 {
+    grid-column: 1/1;
+    grid-row: 1/3;
+  }
+
+  .grid-2 {
+    grid-column: 2/2;
+    grid-row: 1/-1;
+  }
+
+  .grid-3 {
+    grid-column: 2/2;
+    grid-row: 2;
+  }
+
+  .grid-4 {
+    grid-column: 1/3;
+    grid-row: 3/7;
+  }
+}
+
+/** Extended Properties**/
+.horizontal,
+.horizontal .actions,
+.horizontal .scroll {
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: -webkit-inline-box;
+}
+
+/*# sourceMappingURL=additional.css.map */
